@@ -10,6 +10,7 @@
   --background-index-hero-color: #2f303a;
   --background-footer-color: #2f303a;
   --background-team-color: #f5f4fa;
+  --icons-color: #afb1b8;
 }
 
 body {
@@ -51,9 +52,9 @@ img {
 }
 
 /*====== BACKGROUND ======*/
-.hero-index {
+/* .hero-index {
   background: var(--background-index-hero-color);
-}
+} */
 
 .footer {
   background: var(--background-footer-color);
@@ -128,12 +129,46 @@ img {
 }
 
 .contacts-list-item {
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
 .contacts-list-item:not(:last-child) {
   margin-right: 50px;
+}
+
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  fill: var(--text-color);
+  margin-right: 10px;
+}
+
+.mail-icon:hover,
+.mail-icon:focus {
+  fill: var(--accent-color);
+}
+
+.mail-icon {
+  cursor: pointer;
+}
+
+.tel-icon {
+  width: 10px;
+  height: 16px;
+  fill: var(--text-color);
+  margin-right: 10px;
+}
+
+.tel-icon:hover,
+.tel-icon:focus {
+  fill: var(--accent-color);
+}
+
+.tel-icon {
+  cursor: pointer;
 }
 /*====== END HEADER ======*/
 
@@ -250,6 +285,21 @@ img {
 
 /*====== HERO ======*/
 
+.background {
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--background-index-hero-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/images/Hero_picture.jpg);
+}
+
 .hero {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -314,6 +364,75 @@ img {
 /*====== END HERO ======*/
 
 /*====== ADVANTAGES(index.html) ======*/
+.antenna-icon {
+  display: flex;
+  justify-content: center;
+  width: 65px;
+  height: 70px;
+  /* margin: 0;
+  padding: 0; */
+}
+
+.antenna {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--background-team-color);
+}
+
+.clock-icon {
+  display: flex;
+  justify-content: center;
+  width: 67px;
+  height: 70px;
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--background-team-color);
+}
+
+.diagram-icon {
+  display: flex;
+  justify-content: center;
+  width: 70px;
+  height: 54px;
+}
+
+.diagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--background-team-color);
+}
+
+.astronaut-icon {
+  display: flex;
+  justify-content: center;
+  width: 55px;
+  height: 60px;
+}
+
+.astronaut {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--background-team-color);
+}
 
 .advantages {
   padding-top: 94px;
@@ -381,7 +500,55 @@ img {
 
 /*====== TEAM ======*/
 
-.team {
+.instagramm {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.twitter {
+  width: 20px;
+  height: 20px;
+}
+
+.facebook {
+  width: 20px;
+  height: 20px;
+}
+
+.linkedin {
+  width: 20px;
+  height: 20px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+.social-media-item:hover,
+.social-media-item:focus {
+  background-color: var(--accent-color);
+}
+
+.social-media-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+
+.social-media-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social .team {
   padding-top: 94px;
   padding-bottom: 94px;
 }

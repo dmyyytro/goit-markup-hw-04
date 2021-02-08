@@ -263,6 +263,7 @@ img {
 
 .footer-adress {
   margin-top: 20px;
+  margin-right: 70px;
 }
 
 .footer-adress-list-link:not(:last-child) {
@@ -281,7 +282,85 @@ img {
   margin-bottom: 20px;
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-title {
+  text-transform: uppercase;
+  color: var(--main-lite);
+  margin-bottom: 20px;
+}
+
+.footer .social-media-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+
+.footer-social {
+  min-width: 206px;
+  min-height: 80px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .social-media-icon {
+  fill: var(--main-lite);
+}
 /*====== END FOOTER ======*/
+
+.customers-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
+
+.customer:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customer-icon {
+  fill: var(--icons-color);
+}
+
+.customer {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.customer:hover,
+.customer:focus {
+  border-color: var(--accent-color);
+}
+
+.customer:hover .customer-icon,
+.customer:focus .customer-icon {
+  fill: var(--accent-color);
+}
+
+.customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--titles-color);
+  padding-top: 94px;
+}
 
 /*====== HERO ======*/
 
@@ -500,28 +579,7 @@ img {
 
 /*====== TEAM ======*/
 
-.instagramm {
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
-}
-
-.twitter {
-  width: 20px;
-  height: 20px;
-}
-
-.facebook {
-  width: 20px;
-  height: 20px;
-}
-
-.linkedin {
-  width: 20px;
-  height: 20px;
-}
-
-.social-media {
+.social-media-list {
   display: flex;
   justify-content: center;
   justify-content: space-between;
@@ -531,6 +589,7 @@ img {
 .social-media-item:hover,
 .social-media-item:focus {
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 .social-media-item {
@@ -546,9 +605,21 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: var(--icons-color);
 }
 
-.social .team {
+.social-media-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social-media-item:hover .social-media-icon,
+.social-media-item:focus .social-media-icon {
+  fill: var(--main-lite);
+  background-color: var(--accent-color);
+}
+
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
 }

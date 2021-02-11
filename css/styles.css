@@ -254,13 +254,26 @@ img {
 
 .modal-btn-hero {
   min-width: 200px;
-  border: none;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  background-color: var(--accent-color);
+  border: 0px;
+
+  cursor: pointer;
+  padding: 10px 30px;
+
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.875;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
   color: var(--main-lite);
-  background-color: var(--index-hero-btn-background-color);
+
+  margin-right: auto;
+  margin-left: auto;
 }
 /*====== END BUTTONS ======*/
 
@@ -378,7 +391,7 @@ img {
 
 /*====== HERO ======*/
 
-.background {
+.hero-index {
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
@@ -390,20 +403,17 @@ img {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/Hero_picture.jpg);
+    url(../images/Hero_picture.jpg);
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px 0;
 }
 
 .hero {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.hero-index {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
 }
 
 .hero-index .hero-title {
